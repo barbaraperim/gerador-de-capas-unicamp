@@ -27,7 +27,7 @@ export class HeaderImageComponent implements OnInit {
       htmlToImage.toJpeg(document.getElementById('header-image-container'), { quality: 0.95 })
       .then(function (dataUrl) {
         var link = document.createElement('a');
-        link.download = 'my-image-name.jpeg';
+        link.download = 'sua-capa.jpeg';
         link.href = dataUrl;
         link.click();
       });

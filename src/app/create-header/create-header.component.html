@@ -1,6 +1,7 @@
 <div class="create-header-container">
+    <h1> Gerador de capas UNICAMP </h1>
     <mat-card class="create-header-card">
-        <form class="example-form" [formGroup]="createHeaderForm">
+        <form class="example-form" [formGroup]="createHeaderForm" (keydown)="onKeydown($event)">
             <mat-form-field class="example-full-width">
             <mat-label>Curso</mat-label>
             <input matInput placeholder="Ex. Direito" [formControl]="createHeaderForm.get('curso')">

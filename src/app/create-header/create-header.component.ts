@@ -31,4 +31,10 @@ export class CreateHeaderComponent implements OnInit {
     this.router.navigate(['header-image'], params);
   }
 
+  onKeydown(event) {
+    if(event.keyCode === 13) {
+      this.buttonClick();
+    }
+  }
+
 }

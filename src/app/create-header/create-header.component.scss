@@ -1,8 +1,10 @@
 .create-header-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .create-header-card {
