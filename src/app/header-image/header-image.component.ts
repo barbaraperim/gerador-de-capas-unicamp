@@ -8,7 +8,7 @@ import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
   templateUrl: './header-image.component.html',
   styleUrls: ['./header-image.component.scss']
 })
-export class HeaderImageComponent implements OnInit, AfterViewInit {
+export class HeaderImageComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
   curso: string;
