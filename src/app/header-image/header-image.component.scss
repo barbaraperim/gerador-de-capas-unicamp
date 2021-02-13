@@ -1,0 +1,27 @@
+.download-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-image-container {
+    width: 820px;
+    height: 360px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.unicamp-logo {
+    height: 180px;
+    padding: 50px;
+}
+
+.header-text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    margin: 30px;
+}

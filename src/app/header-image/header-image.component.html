@@ -1,0 +1,16 @@
+<div class="download-image-container">
+    <div class="header-image-container" id="header-image-container">
+        <img src="assets/unicamp-logo.png" class="unicamp-logo" />
+        <div class="header-text">
+            <h1> Curso {{ curso }} </h1>
+            <h2> Ano: {{ ano }}</h2>
+            <h3 *ngIf="turma"> Turma: {{ turma }} </h3>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button (click)="downloadClick()" mat-raised-button> Download capa!</button>
+        <button (click)="voltarClick()" mat-raised-button> Voltar </button>
+    </div>
+    
+</div>

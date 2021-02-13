@@ -1,0 +1,21 @@
+<div class="create-header-container">
+    <mat-card class="create-header-card">
+        <form class="example-form" [formGroup]="createHeaderForm">
+            <mat-form-field class="example-full-width">
+            <mat-label>Curso</mat-label>
+            <input matInput placeholder="Ex. Direito" [formControl]="createHeaderForm.get('curso')">
+            </mat-form-field>
+        
+            <mat-form-field class="example-full-width">
+            <mat-label>Ano de ingresso</mat-label>
+            <input matInput placeholder="Ex. 1900" [formControl]="createHeaderForm.get('ano')">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+            <mat-label>Turma, caso tenha</mat-label>
+            <input matInput placeholder="Ex. 69" [formControl]="createHeaderForm.get('turma')">
+            </mat-form-field>
+        </form>
+        <button (click)="buttonClick()" mat-raised-button>Gerar capa!</button>
+    </mat-card>
+</div>
